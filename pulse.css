@@ -1,0 +1,37 @@
+.blob {
+    position:absolute;
+	background:#3C9937;
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+	box-shadow: 0 0 0 0 rgba(60, 153, 55, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+.blob_con {
+    position:absolute;
+	background:#ffffff;
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+	box-shadow: 0 0 0 0 rgba(60, 153, 55, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(60, 153, 55, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 35px rgba(60, 153, 55, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(60, 153, 55, 0);
+	}
+}

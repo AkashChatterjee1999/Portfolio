@@ -1,0 +1,1339 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: black;
+}
+#loading{
+    height:100%;
+    width:100%;
+    position:fixed;
+    z-index:99;
+    background-color: white;
+    background-position: center;
+    background-image: url("loading.gif");
+    background-repeat: no-repeat;
+}
+#particles-js{
+    width :wrap;
+    height : wrap;
+    position: relative;
+}
+#nav-div{
+    opacity:0;
+    position:fixed;
+    height:70px;
+    width:55%;
+    background-color: beige;
+    fill-opacity: initial;
+    border-bottom-right-radius: 20px;
+    z-index: 9;
+}
+#nav-div #dresume{
+    float:left;
+    height:35px;
+    width: 35px;
+    margin-top: 1.5%;
+    margin-left: 400px;
+    border: 2px solid;
+    border-radius: 7px;
+}
+#nav-div #dresume img{
+    height:35px;
+    width: 35px;
+}
+#nav-div #header{
+    float:left;
+    height: wrap;
+    width: wrap;
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    margin-left:20px;
+}
+#header-div{
+    float:left;
+    width:wrap;
+    height:wrap;
+    position: absolute;
+    padding: 0.1%;
+    left:43%;
+}
+#dre{
+    float:left;
+    position:absolute;
+    text-decoration: none;
+    padding: 10px;
+    background-color: none;
+    font-family:'Jost',sans-serif;
+    font-size:20px;
+    border: 2px solid;
+    border-color: green;
+    border-radius:12%;
+    color:white;
+    margin-top:1%;
+    left:8%;
+    transition:1s all ease;
+}
+#dre::hover{
+    background-color: green;
+}
+#header-div h2{
+    font-family: 'Roboto', sans-serif;
+    color: blanchedalmond;
+    size: 70px;
+}
+#profile{
+    position:absolute;
+    width:160px;
+    border-radius: 100px;
+    left:38%;
+    top:-90px;
+    opacity:1;
+}
+#profile_ph{
+    position:absolute;
+    width:160px;
+    border-radius: 100px;
+    left:30%;
+    top:100px;
+    opacity:0;
+}
+#prob{
+    width:wrap;
+    height:wrap;
+    top: 30%;
+    left:5%;
+    position:absolute;
+    background-color: blanchedalmond;
+    color:black;
+    font-family: 'Jost',sans-serif;
+    display:none;
+}
+/*      This div is used for keeping all information      */
+#Main{
+    position:absolute;
+    width:55%;
+    height:4000px;       /*Making this wrap gives error prone displays*/
+    top:300px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #191414;
+    opacity: 0.84;
+}
+/*      This div is used for keeping I am akash.      */
+#Main #d1{ 
+    position: absolute;
+    top:100px;
+    left:8%;
+    height:wrap;
+    width:wrap;
+}
+#Main #d1 .h1{
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size:40px;
+    color: azure;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+}
+/*      This div is used for keeping i am a web developer.      */
+#Main #d2{
+    position: absolute;
+    top:160px;
+    left:8%;
+    height:wrap;
+    width:wrap;
+}
+#Main #d2 .h1{
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size:40px;
+    color: azure;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+}
+/*      This div is used for keeping and competitive programmer      */
+#Main #d3{
+    position: absolute;
+    top:220px;
+    left:8%;
+    height:wrap;
+    width:wrap;
+}
+#Main #d3 .h1{
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size:40px;
+    color: azure;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+}
+/*Animation*/
+.anim-typewriter {      /*This is for animating 1st div */
+    animation: typewriter 4s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) 20 normal;
+}
+@keyframes typewriter {
+    from {
+          width: 0;
+    }
+    to {
+          width: 8em;
+    }
+}
+@keyframes blinkTextCursor {
+    from {
+          border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+          border-right-color: transparent;
+    }
+}
+.anim-typewriter2 {      /*This is for animating 2nd div */
+    animation: typewriter2 4s steps(40) 5s 1 normal both,
+    blinkTextCursor2 500ms steps(40) 25 normal;
+}
+@keyframes typewriter2 {
+    from {
+          width: 0;
+    }
+    to {
+          width: 12em;
+    }
+}
+@keyframes blinkTextCursor2 {
+    from {
+          border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+          border-right-color: transparent;
+    }
+}
+.anim-typewriter3 {      /*This is for animating 3rd div */
+    animation: typewriter3 4s steps(40) 8s 1 normal both,
+    blinkTextCursor3 500ms steps(40) infinite normal;
+}
+@keyframes typewriter3 {
+    from {
+          width: 0;
+    }
+    to {
+          width: 12em;
+    }
+}
+@keyframes blinkTextCursor3 {
+    from {
+          border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+          border-right-color: transparent;
+    }
+}
+#Main #d4{
+    position:absolute;
+    height: wrap;
+    width: wrap;
+    top:350px;
+    left:10%;
+}
+#Main #d4 h2{
+    color:green;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+}
+#Main #d4 h3{
+    color:white;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    margin-right:20px;
+}
+#Main #sep1{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height:1px;
+    top:350px;      /*320px*/
+}
+#Main #sep2{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height:1px;
+    top:570px;
+}
+/*---------------------------------------This part for services section-------------------------*/
+#Main #d5{
+    position:absolute;
+    height: wrap;
+    width: wrap;
+    top:580px;
+    left:10%;
+}
+#Main #d5 h2{
+    color:green;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+}
+#Main #d5 #ic1{
+    float:left;
+    width:100px;
+    height:100px;
+}
+#Main #d5 #ic1 #ico1{
+    width:wrap;
+    height:wrap;
+    margin-left: 12px;
+}
+#Main #d5 #ic1 #img_ico1{
+    width:30px;
+    height:30px;
+    border-radius: 30px;
+    /*transition: transform 1s;*/
+}
+#Main #d5 #ic1 #img_ico1:hover{
+    width:90px;
+    height:90px;
+    border-radius: 90px;
+}
+#Main #d5 #ic1 h4{
+    font-family: 'roboto',sans-serif;
+    color:white;
+    font-size: 10px;
+    margin-top: 20px;
+}
+#Main #d5 #ic2{
+    float:left;
+    margin-left:40px;
+    width:100px;
+    height:100px;
+}
+#Main #d5 #ic2 #ico2{
+    width:wrap;
+    height:wrap;
+    margin-left: 12px;
+}
+#Main #d5 #ic2 #img_ico2{
+    width:30px;
+    height:30px;
+    border-radius: 30px;
+}
+#Main #d5 #ic2 #img_ico2:hover{
+    width:90px;
+    height:90px;
+    border-radius: 90px;
+}
+#Main #d5 #ic2 h4{
+    font-family: 'roboto',sans-serif;
+    color:white;
+    font-size: 10px;
+    margin-top: 20px;
+}
+#Main #d5 #ic3{
+    margin-left:40px;
+    float:left;
+    width:100px;
+    height:100px;
+}
+#Main #d5 #ic3 #ico3{
+    width:wrap;
+    height:wrap;
+    margin-left: 12px;
+}
+#Main #d5 #ic3 #img_ico3{
+    width:30px;
+    height:30px;
+    border-radius: 30px;
+}
+#Main #d5 #ic3 #img_ico3:hover{
+    width:90px;
+    height:90px;
+    border-radius: 90px;
+}
+#Main #d5 #ic3 h4{
+    font-family: 'roboto',sans-serif;
+    color:white;
+    font-size: 10px;
+    margin-top: 20px;
+}
+#Main #d5 #ic4{
+    float:left;
+    margin-left:40px;
+    width:100px;
+    height:100px;
+}
+#Main #d5 #ic4 #ico4{
+    width:wrap;
+    height:wrap;
+    margin-left: 12px;
+}
+#Main #d5 #ic4 #img_ico4{
+    width:30px;
+    height:30px;
+    border-radius: 30px;
+}
+#Main #d5 #ic4 #img_ico4:hover{
+    width:90px;
+    height:90px;
+    border-radius: 90px;
+}
+#Main #d5 #ic4 h4{
+    font-family: 'roboto',sans-serif;
+    color:white;
+    font-size: 10px;
+    margin-top: 20px;
+}
+/*-----------------------------This marks the end of services section-----------------------------------------*/
+#Main #sep3{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height:1px;
+    top:820px;
+}
+/*-------------------------------This part is for technical skills------------------------------------*/
+.d6{
+    position:absolute;
+    height: wrap;
+    width: wrap;
+    top:830px;
+    left:10%;
+    opacity:1;
+}
+#Main .d6 h2{
+    color:green;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+}
+#Main .d6 #t1{
+    font-family: 'Jost', sans-serif;
+    color: white;
+    font-size: 16px;
+}
+        /*The correspoding css scripts are for generating circular progress of various fields*/
+#Main .d6 #pbar1{
+    position:absolute;
+    top:320px;
+    left:10%;
+    height:wrap;
+    width:wrap;
+}
+#Main .d6 #pbar2{
+    position:absolute;
+    top:320px;
+    right:10%;
+    height:wrap;
+    width:wrap;
+}
+#Main .d6 #pbar3{
+    position:absolute;
+    top:450px;
+    left:10%;
+    height:wrap;
+    width:wrap;
+}
+#Main .d6 #pbar4{
+    position:absolute;
+    top:450px;
+    right:10%;
+    height:wrap;
+    width:wrap;
+}
+#Main .d6 #pbar5{
+    position:absolute;
+    top:580px;
+    left:10%;
+    height:wrap;
+    width:wrap;
+}
+#Main .d6 #pbar6{
+    position:absolute;
+    top:580px;
+    right:10%;
+    height:wrap;
+    width:wrap;
+}
+/*-------------------------------------Technical skill ending-----------------------------------*/
+#Main #sep4{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height:1px;
+    top:1670px;
+}
+/*-----------------------------------Starting of My projects section------------------------------*/
+#Main #d7{
+    position:absolute;
+    height: wrap;
+    width: wrap;
+    top:1690px;
+    left:10%;
+}
+#Main #d7 h2{
+    color:green;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+}
+/*-------------------------This represents the starting of the option-----------------------------*/
+#Main #d7 #p1{
+    position:absolute;
+    top:110px;
+    left: 2%;
+    width:wrap;
+}
+#Main #d7 #p1 #p11{
+    float: left;
+    position: absolute;
+    left:2%;
+    width:20px;
+    height:20px;
+}
+#Main #d7 #p1 #p11 .blob{
+    margin-left:2%;
+    position: absolute;
+}
+#Main #d7 #p1 #p12{
+    float: left;
+    position: absolute;
+    margin-left:25px;
+    width:450px;
+    height:20px;
+
+}
+#Main #d7 #p1 #p12 h4{
+    position: absolute;
+    margin-top:-0px;
+    color:white;
+    font-family: 'Jost', sans-serif;
+    size:20px;
+}
+/*-------------------------This represents the ending of the option-----------------------------*/
+#Main #d7 #p2{
+    position:absolute;
+    top: 160px;
+    left: 2%;
+    width:wrap;
+}
+#Main #d7 #p2 #p21{
+    float: left;
+    position: absolute;
+    left:10%;
+    width:20px;
+    height:20px;
+}
+#Main #d7 #p2 #p21 .blob{
+    margin-left:2%;
+    position: absolute;
+}
+#Main #d7 #p2 #p22{
+    float: left;
+    position: absolute;
+    margin-left:25px;
+    width:450px;
+    height:20px;
+
+}
+#Main #d7 #p2 #p22 h4{
+    position: absolute;
+    margin-top:-0px;
+    color:white;
+    font-family: 'Jost', sans-serif;
+    size:20px;
+}
+#Main #d7 #p3{
+    position:absolute;
+    top: 210px;
+    left: 2%;
+    width:wrap;
+}
+#Main #d7 #p3 #p31{
+    float: left;
+    position: absolute;
+    left:10%;
+    width:20px;
+    height:20px;
+}
+#Main #d7 #p3 #p31 .blob{
+    margin-left:2%;
+    position: absolute;
+}
+#Main #d7 #p3 #p32{
+    float: left;
+    position: absolute;
+    margin-left:25px;
+    width:450px;
+    height:20px;
+
+}
+#Main #d7 #p3 #p32 h4{
+    position: absolute;
+    margin-top:-0px;
+    color:white;
+    font-family: 'Jost', sans-serif;
+    size:20px;
+}
+#Main #d7 #p4{
+    position:absolute;
+    top: 260px;
+    left: 2%;
+    width:wrap;
+}
+#Main #d7 #p4 #p41{
+    float: left;
+    position: absolute;
+    left:10%;
+    width:20px;
+    height:20px;
+}
+#Main #d7 #p4 #p41 .blob{
+    margin-left:2%;
+    position: absolute;
+}
+#Main #d7 #p4 #p42{
+    float: left;
+    position: absolute;
+    margin-left:25px;
+    width:450px;
+    height:20px;
+
+}
+#Main #d7 #p4 #p42 h4{
+    position: absolute;
+    margin-top:-0px;
+    color:white;
+    font-family: 'Jost', sans-serif;
+    size:20px;
+}
+#Main #d7 #p5{
+    position:absolute;
+    top: 310px;
+    left: 2%;
+    width:wrap;
+}
+#Main #d7 #p5 #p51{
+    float: left;
+    position: absolute;
+    left:10%;
+    width:20px;
+    height:20px;
+}
+#Main #d7 #p5 #p51 .blob{
+    margin-left:2%;
+    position: absolute;
+}
+#Main #d7 #p5 #p52{
+    float: left;
+    position: absolute;
+    margin-left:25px;
+    width:450px;
+    height:20px;
+
+}
+#Main #d7 #p5 #p52 h4{
+    position: absolute;
+    margin-top:-0px;
+    color:white;
+    font-family: 'Jost', sans-serif;
+    size:20px;
+}
+#Main #d7 #p6{
+    position:absolute;
+    top: 360px;
+    left: 2%;
+    width:wrap;
+}
+#Main #d7 #p6 #p61{
+    float: left;
+    position: absolute;
+    left:10%;
+    width:20px;
+    height:20px;
+}
+#Main #d7 #p6 #p61 .blob{
+    margin-left:2%;
+    position: absolute;
+}
+#Main #d7 #p6 #p62{
+    float: left;
+    position: absolute;
+    margin-left:25px;
+    width:450px;
+    height:20px;
+
+}
+#Main #d7 #p6 #p62 h4{
+    position: absolute;
+    margin-top:-0px;
+    color:white;
+    font-family: 'Jost', sans-serif;
+    size:20px;
+}
+#Main #d7 #p7{
+    position:absolute;
+    top: 410px;
+    left: 2%;
+    width:wrap;
+}
+#Main #d7 #p7 #p71{
+    float: left;
+    position: absolute;
+    left:10%;
+    width:20px;
+    height:20px;
+}
+#Main #d7 #p7 #p71 .blob{
+    margin-left:2%;
+    position: absolute;
+}
+#Main #d7 #p7 #p72{
+    float: left;
+    position: absolute;
+    margin-left:25px;
+    width:450px;
+    height:20px;
+
+}
+#Main #d7 #p7 #p72 h4{
+    position: absolute;
+    margin-top:-0px;
+    color:white;
+    font-family: 'Jost', sans-serif;
+    size:20px;
+}
+#Main #d7 #p8{
+    position:absolute;
+    top: 465px;
+    left: 2%;
+    width:wrap;
+}
+#Main #d7 #p8 #p81{
+    float: left;
+    position: absolute;
+    left:10%;
+    width:20px;
+    height:20px;
+}
+#Main #d7 #p8 #p81 .blob{
+    margin-left:2%;
+    position: absolute;
+}
+#Main #d7 #p8 #p82{
+    float: left;
+    position: absolute;
+    margin-left:25px;
+    width:450px;
+    height:20px;
+
+}
+#Main #d7 #p8 #p82 h4{
+    position: absolute;
+    margin-top:-0px;
+    color:white;
+    font-family: 'Jost', sans-serif;
+    size:20px;
+}
+#Main #d7 #p9{
+    position:absolute;
+    top: 525px;
+    left: 2%;
+    width:wrap;
+}
+#Main #d7 #p9 #p91{
+    float: left;
+    position: absolute;
+    left:10%;
+    width:20px;
+    height:20px;
+}
+#Main #d7 #p9 #p91 .blob{
+    margin-left:2%;
+    position: absolute;
+}
+#Main #d7 #p9 #p92{
+    float: left;
+    position: absolute;
+    margin-left:25px;
+    width:450px;
+    height:20px;
+
+}
+#Main #d7 #p9 #p92 h4{
+    position: absolute;
+    margin-top:-0px;
+    color:white;
+    font-family: 'Jost', sans-serif;
+    size:20px;
+}
+#Main #d7 #p10{
+    position:absolute;
+    top: 585px;
+    left: 2%;
+    width:wrap;
+}
+#Main #d7 #p10 #p101{
+    float: left;
+    position: absolute;
+    left:10%;
+    width:20px;
+    height:20px;
+}
+#Main #d7 #p10 #p101 .blob{
+    margin-left:2%;
+    position: absolute;
+}
+#Main #d7 #p10 #p102{
+    float: left;
+    position: absolute;
+    margin-left:25px;
+    width:450px;
+    height:20px;
+
+}
+#Main #d7 #p10 #p102 h4{
+    position: absolute;
+    margin-top:-0px;
+    color:white;
+    font-family: 'Jost', sans-serif;
+    size:20px;
+}
+/*-------------------------------------------------------------------------------------------------*/
+#Main #sep5{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height:1px;
+    top:2370px;
+}
+/*-----------------------This represents the starting of Achievements portion----------------------------*/
+#Main #d8{
+    position:absolute;
+    height: wrap;
+    width: wrap;
+    top:2405px;
+    left:10%;
+}
+#Main #d8 h2{
+    color:green;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+}
+#Main #d8 #t1{
+    font-family: 'Jost', sans-serif;
+    color: white;
+    font-size: 16px;
+}
+#Main #d8 #achieve1{
+    height:wrap;
+    width:wrap;
+    position:absolute;
+    top:490px;
+}
+/*----------------------------------------------achieve 1 div code starts here-----------------------------*/
+/*--------------------------------Code for dispalying an image of achievements starts here---------------------*/
+#Main #d8 #achieve1 #pic1{
+    float:left;
+    height:250px;
+    width:300px;
+    position:absolute;
+    overflow:hidden;
+}
+#Main #d8 #achieve1 #pic1 #img_pic1{
+    height:250px;
+    width:300px;
+    border-radius: 10%;
+    transition: transform 2s;
+}
+/*#Main #d8 #achieve1 #pic1*/ #details1{
+    position:absolute;
+    top:10px;
+    left:1px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.8);
+    color:white;
+    font-family: 'Jost',sans-serif;
+    font-size:20px;
+    transform:scaleY(0);
+    transition: transform .8s;
+}
+/*#Main #d8 #achieve1 #pic1*/ #details1 p{
+    padding-top:50px;
+    padding-bottom:50px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+#Main #d8 #achieve1 #pic1:hover #img_pic1{
+    transform:scale(1.2);
+    overflow:hidden;
+}
+#Main #d8 #achieve1 #pic1:hover #details1{
+    transform:scaleY(1);
+}
+/*----------------------------------Code for dispalying an image of achievements ends here---------------------*/
+#Main #d8 #achieve1 #pic2{
+    float:left;
+    height:250px;
+    width:300px;
+    margin-left:320px;
+    position:absolute;
+    border-radius: 10%;
+    overflow: hidden;
+}
+#Main #d8 #achieve1 #pic2 #img_pic2{
+    height:250px;
+    width:300px;
+    border-radius: 10%;
+    transition: transform 2s;
+}
+#Main #d8 #achieve1 #pic2:hover #img_pic2{
+    transform:scale(1.2);
+    overflow:hidden;
+}
+#Main #d8 #achieve1 #pic2:hover #details1{
+    transform:scaleY(1);
+}
+/*----------------------------------------------achieve 1 div code ends here-----------------------------*/
+/*----------------------------------------------Code for achieve 2 start here----------------------------*/
+#Main #d8 #achieve2{
+    height:wrap;
+    width:wrap;
+    position:absolute;
+    top:780px;
+}
+#Main #d8 #achieve2 #pic3{
+    float:left;
+    height:250px;
+    width:300px;
+    background-color: aliceblue;
+    position:absolute;
+    border-radius: 10%;
+    overflow:hidden;
+}
+/*#Main #d8 #achieve1 #pic1*/ #details2{
+    position:absolute;
+    top:10px;
+    left:1px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.8);
+    color:white;
+    font-family: 'Jost',sans-serif;
+    font-size:20px;
+    transform:scaleY(0);
+    transition: transform .8s;
+}
+/*#Main #d8 #achieve1 #pic1*/ #details2 p{
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+#Main #d8 #achieve2 #pic3 #img_pic3{
+    height:250px;
+    width:300px;
+    border-radius: 10%;
+    transition: transform 2s;
+}
+#Main #d8 #achieve2 #pic3:hover #img_pic3{
+    transform:scale(1.2);
+    overflow:hidden;
+}
+#Main #d8 #achieve2 #pic3:hover #details2{
+    transform:scaleY(1);
+}
+#Main #d8 #achieve2 #pic4{
+    float:left;
+    height:250px;
+    width:300px;
+    background-color: aliceblue;
+    margin-left:320px;
+    position:absolute;
+    border-radius: 10%;
+    overflow: hidden;
+}
+#Main #d8 #achieve2 #pic4 #img_pic4{
+    height:250px;
+    width:300px;
+    border-radius: 10%;
+    transition: transform 2s;
+}
+#Main #d8 #achieve2 #pic4:hover #img_pic4{
+    transform:scale(1.2);
+    overflow:hidden;
+}
+#Main #d8 #achieve2 #pic4:hover #details1{
+    transform:scaleY(1);
+}
+/*--------------------------------------------------------------------------------------------------------*/
+#Main #sep6{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height:1px;
+    top:3520px;
+}
+/*----------------------------------------This div is for contact me---------------------------------------*/
+#Main #d9{
+    height:wrap;
+    width:wrap;
+    position:absolute;
+    top:3560px;
+    left:10%;
+}
+#Main #d9 h2{
+    font-family: 'Jost',sans-serif;
+    color:green;
+    font-size:20px;
+}
+#Main #d9 h1{
+    font-family: 'Roboto',sans-serif;
+    color:white;
+    font-size:20px;
+}
+#Main #d9 #mail{
+    width:wrap;
+    height:wrap;
+    position:absolute;
+    top:200px;
+}
+#Main #d9 #mail #mmail{
+    float:left;
+    position: absolute;
+    color:white;
+    height:20px;
+    width:wrap;
+    font-family:'Jost',sans-serif;
+    font-size:20px;
+}
+#Main #d9 #mail1{
+    float:left;
+    position:absolute;
+    margin-left:160px;
+    width:wrap;
+    height:wrap;
+    padding:5px;
+    background-color: white;
+    border-radius: 10px;
+    color:black;
+    font-family:'Jost',sans-serif;
+}
+#Main #d9 #phno{
+    width:wrap;
+    height:wrap;
+    position:absolute;
+    top:250px;
+}
+#Main #d9 #phno #pphno{
+    float:left;
+    position: absolute;
+    color:white;
+    height:20px;
+    width:wrap;
+    font-family:'Jost',sans-serif;
+    font-size:20px;
+}
+#Main #d9 #phno1{
+    float:left;
+    position:absolute;
+    margin-left:160px;
+    width:wrap;
+    height:wrap;
+    padding:5px;
+    background-color: white;
+    border-radius: 10px;
+    color:black;
+    font-family:'Jost',sans-serif;
+}
+#Main #d9 #slinks{
+    width:wrap;
+    height:wrap;
+    position:absolute;
+    top:340px;
+}
+#Main #d9 #slinks #fb{
+    position:absolute;
+    float:left;
+    width:wrap;
+    height:wrap;
+}
+#Main #d9 #slinks #fb #fb_ico{
+    height:50px;
+    width:50px;
+    border-radius: 32px;
+    transition:transform 1s;
+}
+#Main #d9 #slinks #fb:hover #fb_ico{
+    transform: scale(1.5);
+}
+#Main #d9 #slinks #lin{
+    position:absolute;
+    float:left;
+    width:wrap;
+    height:wrap;
+    margin-left:75px;
+}
+#Main #d9 #slinks #lin #lin_ico{
+    height:50px;
+    width:50px;
+    border-radius: 32px;
+    transition:transform 1s;
+}
+#Main #d9 #slinks #lin:hover #lin_ico{
+    transform: scale(1.5);
+}
+#Main #d9 #slinks #github{
+    position:absolute;
+    float:left;
+    width:wrap;
+    height:wrap;
+    margin-left:147px;
+}
+#Main #d9 #slinks #github #git_ico{
+    height:50px;
+    width:50px;
+    border-radius: 32px;
+    transition:transform 1s;
+}
+#Main #d9 #slinks #github:hover #git_ico{
+    transform: scale(1.5);
+}
+#Main #d9 #slinks #gle{
+    position:absolute;
+    float:left;
+    width:wrap;
+    height:wrap;
+    margin-left:215px;
+}
+#Main #d9 #slinks #gle #gle_ico{
+    height:50px;
+    width:50px;
+    border-radius: 32px;
+    transition:transform 1s;
+}
+#Main #d9 #slinks #gle:hover #gle_ico{
+    transform: scale(1.5);
+}
+#Main #d9 #slinks #fnote{
+    position:absolute;
+    float:left;
+    width:wrap;
+    height:wrap;
+    margin-left:300px;
+    margin-top:70px;
+    color:white;
+    font-family:'Jost',sans-serif;
+}
+/*----------------------------------------------------------------------------------------------------------*/
+/*      This div is used for keeping all infos like skills,projects,achievements,about us,contact us      */
+#Contents{
+    height:wrap;
+    width:wrap;
+    float:right;
+    position:fixed;
+    right:20%;
+    top:34%;
+}
+#abt{
+    width:wrap;
+    height:wrap;
+    float:left;
+    color:grey;
+    font-size: 13px;
+    font-family: 'Jost', sans-serif;
+}
+#abt_point{
+    float:left;
+    height:wrap;
+    width:wrap;
+}
+#serv{
+    color:grey;
+    font-size: 13px;
+    font-family: 'Jost', sans-serif;
+    margin-top: 10px;
+}
+#tech{
+    color:grey;
+    font-size: 13px;
+    font-family: 'Jost', sans-serif;
+    margin-top: 10px;
+}
+#projs{
+    color:grey;
+    font-size: 13px;
+    font-family: 'Jost', sans-serif;
+    margin-top: 10px;
+}
+#achieve{
+    color:grey;
+    font-size: 13px;
+    font-family: 'Jost', sans-serif;
+    margin-top: 10px;
+}
+#contact{
+    color:white;
+    font-size: 13px;
+    font-family: 'Jost', sans-serif;
+    margin-top: 10px;
+}
+@media (max-width: 414px){
+    #Main{
+        border-top-right-radius: 0px;
+        width: 100%;
+        height:4650px;
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+    #Main #d8{
+        left:8%;
+    }
+    #Main #profile{
+        left: 30%;
+        opacity: 0;
+    }
+    #nav-div{
+        width: 100%;
+    }
+    #Main #d1{
+        top:120px;
+        left:4%;
+    }
+    #Main .d6{
+        left:8%;
+    }
+    #Main #d2{
+        top:170px;
+        left:4%;
+    }
+    #Main #d3{
+        top:220px;
+        left:4%;
+    }
+    #Main #d4{
+        top: 290px;
+    }
+    #Main #d7{
+        left:8%;
+    }
+    #Main #d4 h3{
+        top:310px;
+    }
+    #dre{
+        font-size:15px;
+    }
+    #header-div h2{
+        font-size:20px;
+        margin-left:70px;
+    }
+    #Main #sep1{
+        top:290px;
+    }
+    #Main #sep2{
+        top:530px;
+    }
+    #Main #d1 .h1{
+        font-size: 30px;
+    }
+    #Main #d3 .h1{
+        font-size: 30px;
+    }
+    #Main #d2 .h1{
+        font-size: 30px;
+    }
+    #nav-div{
+        position:fixed;
+        width:wrap;
+        font-size: 14px;
+        height:60px;
+    }
+    #nav-div #dresume{
+        margin-top:-50px;
+        margin-left: 80px;
+    }
+    #Main #d5 #ic3{
+        margin-top:6px;
+        margin-left:10px;
+    }
+    #Main #d5{
+        top:520px;
+    }
+    #Main #d8 #achieve1{
+        top: 550px;
+    }
+    #Main #d8 #achieve1 #pic1 {
+        float: unset;
+    }
+    #Main #profile_ph{
+        opacity:1;
+    }
+    #Main #d8 #achieve1 #pic2 {
+        margin-top:270px;
+        float: unset;
+        margin-left: -0px;
+    }
+    #Main #d8 #achieve2{
+        top: 1100px;
+    }
+    #Main #d8 #achieve2 #pic3{
+        float: unset;
+    }
+    #Main #d8 #achieve2 #pic4 {
+        margin-top:270px;
+        float: unset;
+        margin-left: -0px;
+    }
+    #Main #sep6{
+        top:4100px;
+    }
+    #Main #d9{
+        top:4140px;
+        left:8%;
+    }
+    #Main #d9 #slinks #fnote{
+        float: none;
+        margin-top: 90px;
+        margin-left:-0px;
+    }
+    #Main #d9 #mail1{
+        margin-left:135px;
+        font-size: 14px;
+    }
+}
+@media (max-width:320px){
+    #Main{
+        display:none;
+    }
+    #prob{
+        display: inline;
+    }
+}
+@media (max-width: 1024px){
+    #Main{
+        width: 60%;
+    }
+    #Main #profile{
+        opacity: 0;
+    }
+    #profile_ph{
+        opacity:1;
+    }
+    #nav-div{
+        width: 60%;
+    }
+    #nav-div #dresume{
+        margin-left: 320px;
+    }
+}
+@media (max-width: 768px){
+    #nav-div{
+        width: 100%;
+    }
+    #Main{
+        width:100%;
+    }
+    #Contents{
+        display: none;
+    }
+    #Main #d4 h3{
+        margin-right: 30px;
+    }
+}
